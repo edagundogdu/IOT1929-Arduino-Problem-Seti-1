@@ -1,0 +1,24 @@
+//IOT1929 – Arduino Problem Seti 2 - Trafik Işıkları
+
+int kirmizi = 2;
+int sari = 3;
+int yesil = 4;
+
+void setup() {
+  pinMode(kirmizi, OUTPUT);
+  pinMode(sari, OUTPUT);
+  pinMode(yesil, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(kirmizi, HIGH);
+  delay(10000); 
+  digitalWrite(sari, HIGH);
+  delay(10000); 
+  digitalWrite(kirmizi, LOW);
+  delay(2000); 
+  digitalWrite(sari, LOW);
+  digitalWrite(yesil, HIGH);
+  delay(5000); 
+  digitalWrite(yesil, LOW);
+}
